@@ -1,0 +1,387 @@
+/* Estilos de reset */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(226, 226, 226);
+}
+
+/* Estilos de navegación */
+nav {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  width: 90px;
+  background: #eeeeee;
+  overflow: hidden;
+  transition: 1s;
+  align-items: center;
+}
+
+nav:hover {
+  width: 280px;
+  transition: 1s;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 10px;
+  padding-bottom: 3rem;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+}
+
+.logo span {
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block; /* Añadido */
+  vertical-align: middle; /* Añadido */
+}
+
+.nav-item {
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+a {
+  position: relative;
+  width: 280px;
+  font-size: 14px;
+  color: rgb(85, 83, 83);
+  display: table;
+  padding: 10px;
+}
+
+nav .fas {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+a:hover {
+  background: #eee;
+}
+
+a:hover i {
+  color: #ffd700;
+  transition: 0.5s;
+}
+
+.logout {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Estilos del contenedor principal */
+.container {
+  display: flex;
+}
+
+/* Estilos de la sección principal */
+.main {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+
+.main-top {
+  display: flex;
+  width: 100%;
+}
+
+.main-top i {
+  position: absolute;
+  right: 0;
+  margin: 10px 30px;
+  color: rgb(110, 109, 109);
+  cursor: pointer;
+}
+
+/* Estilos de los usuarios */
+.users {
+  display: flex;
+  width: 100%;
+}
+
+.users .card {
+  width: 25%;
+  margin: 10px;
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.users .card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.users .card h4 {
+  text-transform: uppercase;
+}
+
+.users .card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.users table {
+  margin: auto;
+}
+
+.users .per span {
+  padding: 5px;
+  border-radius: 10px;
+  background: rgb(223, 223, 223);
+}
+
+.users td {
+  font-size: 14px;
+  padding-right: 15px;
+}
+
+.users .card button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #4ad489;
+}
+
+.users .card button:hover {
+  background: #4ad489;
+  color: #fff;
+  transition: 0.5s;
+}
+
+/* Estilos de la lista de asistencia */
+.attendance {
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+.attendance-list {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de la tabla */
+.table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+}
+
+table thead tr {
+  color: #000000;
+  background: #f9f003;
+  text-align: left;
+  font-weight: bold;
+  align-items: center;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:nth-of-type(odd) {
+  background: #f3f3f3;
+}
+
+.table tbody tr.active {
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.table button {
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #4ad489;
+}
+
+.table button:hover {
+  background: #4ad489;
+  color: #fff;
+  transition: 0.5rem;
+}
+
+/* Estilos de los íconos */
+.icon-ver,
+.icon-editar,
+.icon-eliminar {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+/* Estilos específicos de las tarjetas */
+.card {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  margin: 20px;
+}
+
+.card-content {
+  display: flex;
+  width: 100%;
+}
+
+.custom-left {
+  flex: 1;
+  padding: 20px;
+}
+
+.custom-right {
+  padding: 20px;
+}
+
+.total-players {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.total-players p {
+  margin: 0;
+}
+
+.per table {
+  width: 100%;
+}
+
+.per table td {
+  text-align: left;
+}
+/* Nuevo estilo para la sección de búsqueda */
+.search-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff; /* Agregado */
+  border-radius: 10px; /* Agregado */
+  padding: 10px; /* Agregado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregado */
+}
+
+.jugadores-section {
+  display: flex;
+  align-items: center;
+}
+
+.jugadores-section i {
+  margin-right: 10px;
+  font-size: 1.5em;
+}
+
+.jugadores-section span {
+  font-size: 1.2em;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+}
+
+.search-bar span.search-text {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #777;
+}
+
+.search-bar i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #777;
+}
+/* Nuevo estilo para el contenedor de la sección de agregar jugador */
+.add-player-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end; /* Alinea el contenido a la derecha */
+}
+
+.add-player-section {
+  background: #fff; /* Color de fondo */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 10px; /* Borde redondeado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  width: auto; /* Ancho deseado */
+}
+
+.add-player-section .card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.add-player-section .card-content i {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.add-player-section .card-content h3 {
+  margin: 0;
+}

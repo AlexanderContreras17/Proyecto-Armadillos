@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club Armadillos</title>
+    <link rel="stylesheet" href="styleDB.css" />
+    <!-- Font Awesome Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#" class="logo">
+              <img src="Logo.png" alt="Club Armadillos Logo" />
+              <span class="nav-item">Admin</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-home"></i>
+              <span class="nav-item">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-running"></i>
+              <span class="nav-item">Jugadores</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-user"></i>
+              <span class="nav-item">Responsables</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-calendar-alt"></i>
+              <span class="nav-item">Temporadas</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-list"></i>
+              <span class="nav-item">Categorias</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Log out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Fin Navbar -->
+      <section class="main">
+        <!-- Nuevo código -->
+        <div class="main-top">
+          <h1>Club Armadillos</h1>
+        </div>
+        <div class="search-section">
+          <div class="jugadores-section">
+            <i class="fas fa-user"></i>
+            <span>Temporadas</span>
+          </div>
+          <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Buscar..." />
+          </div>
+        </div>
+        <section>
+          <div class="add-player-container">
+            <div class="add-player-section card">
+              <div class="card-content">
+                <i class="fas fa-user-plus"></i>
+                <h3>Agregar Temporada</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Fin Nuevo código -->
+        <!-- Tabla de informacion #1 -->
+        <section class="attendance">
+          <div class="attendance-list">
+            <h1 class="CardJugadores">Temporadas Registradas</h1>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Fecha de Inicio</th>
+                  <th>Fecha de Finalizacion</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Karina Ramires</td>
+                  <td>24/07/2024</td>
+                  <td>25/03/2024</td>
+                  <td>
+                    <i class="fas fa-edit icon-editar" title="Editar"></i>
+                    <i
+                      class="fas fa-trash-alt icon-eliminar"
+                      title="Eliminar"
+                    ></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Karina Ramires</td>
+                  <td>24/07/2024</td>
+                  <td>25/03/2024</td>
+                  <td>
+                    <i class="fas fa-edit icon-editar" title="Editar"></i>
+                    <i
+                      class="fas fa-trash-alt icon-eliminar"
+                      title="Eliminar"
+                    ></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Karina Ramires</td>
+                  <td>24/07/2024</td>
+                  <td>25/03/2024</td>
+                  <td>
+                    <i class="fas fa-edit icon-editar" title="Editar"></i>
+                    <i
+                      class="fas fa-trash-alt icon-eliminar"
+                      title="Eliminar"
+                    ></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>
