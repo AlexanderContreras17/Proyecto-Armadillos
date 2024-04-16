@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club Armadillos</title>
+    <link rel="stylesheet" href="styleDB.css" />
+    <!-- Font Awesome Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#" class="logo">
+              <img src="Logo.png" alt="Club Armadillos Logo" />
+              <span class="nav-item">Admin</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-home"></i>
+              <span class="nav-item">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-running"></i>
+              <span class="nav-item">Jugadores</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-user"></i>
+              <span class="nav-item">Responsables</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-calendar-alt"></i>
+              <span class="nav-item">Temporadas</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-list"></i>
+              <span class="nav-item">Categorias</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Log out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Fin Navbar -->
+      <section class="main">
+        <div class="main-top">
+          <h1>Club Armadillos</h1>
+        </div>
+        <div class="search-section">
+          <div class="jugadores-section">
+            <i class="fas fa-list"></i>
+            <span>Agregar Categoria</span>
+          </div>
+        </div>
+        <!-- Formulario para agregar Categoria -->
+        <section class="attendance">
+          <div class="attendance-list">
+            <div class="form-group">
+              <div class="half-width">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="half-width">
+                <label for="edad_minima">Edad Mínima:</label>
+                <select id="edad_minima" name="edad_minima" required>
+                  <option value="" disabled selected>
+                    Selecciona la edad mínima
+                  </option>
+                  <!-- Aquí puedes añadir las opciones de edad -->
+                  <option value="0">0 años</option>
+                  <option value="1">1 año</option>
+                  <option value="2">2 años</option>
+                  <!-- Continuar con más opciones según sea necesario -->
+                </select>
+              </div>
+              <div class="half-width">
+                <label for="edad_maxima">Edad Máxima:</label>
+                <select id="edad_maxima" name="edad_maxima" required>
+                  <option value="" disabled selected>
+                    Selecciona la edad máxima
+                  </option>
+                  <!-- Aquí puedes añadir las opciones de edad -->
+                  <option value="1">1 año</option>
+                  <option value="2">2 años</option>
+                  <option value="3">3 años</option>
+                  <!-- Continuar con más opciones según sea necesario -->
+                </select>
+              </div>
+            </div>
+          </div>
+          <!-- Botones -->
+          <div class="buttons">
+            <button class="accept-button">Aceptar</button>
+            <button class="cancel-button">Cancelar</button>
+          </div>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>
