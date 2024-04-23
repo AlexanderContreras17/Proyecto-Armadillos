@@ -518,3 +518,36 @@ input[type="email"] { /* Añadido para el campo de correo electrónico */
   color: #ffd700;
   background-color: #000000; /* Color dorado al pasar el cursor */
 }
+
+/* Estilos Para las tarjetas de eliminar */
+.Card-Eliminar {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección del flujo a vertical */
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Ajusta la altura según sea necesario */
+}
+
+.Card-Eliminar .form-group {
+  text-align: center;
+  max-width: 400px; /* Ajusta el ancho máximo según sea necesario */
+  padding: 20px;
+  background-color: #ffffff; /* Color de fondo */
+  border-radius: 10px; /* Borde redondeado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.Card-Eliminar .half-width {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea el contenido verticalmente en la parte superior */
+  margin-bottom: 20px; /* Agrega espacio entre el ícono y el texto */
+}
+
+.Card-Eliminar .half-width i {
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+
+
+
