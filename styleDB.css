@@ -441,24 +441,25 @@ table thead tr {
 
 .form-group {
   display: flex;
-  justify-content: space-between;
-  align-items: center; /* Alinear verticalmente */
+  justify-content: space-between; /* Distribuye los elementos horizontalmente */
+  align-items: center; /* Alinea verticalmente */
   margin-bottom: 25px;
 }
 
 .half-width {
-  width: 48%; /* Ancho para cada campo de texto */
+  width: calc(50% - 5px); /* 50% menos el espacio entre los campos */
 }
 
 label {
   margin-bottom: 5px;
+  display: block; /* Asegura que las etiquetas ocupen toda la anchura disponible */
 }
 
 input[type="text"],
 input[type="date"],
 select,
 input[type="password"],
-input[type="email"] { /* Añadido para el campo de correo electrónico */
+input[type="email"] {
   width: 100%;
   padding: 8px;
   border-radius: 4px;
@@ -466,6 +467,9 @@ input[type="email"] { /* Añadido para el campo de correo electrónico */
   box-sizing: border-box;
   margin-bottom: 10px;
 }
+
+
+
 
 /* Botones Aceptar y cancelar */
 

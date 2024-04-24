@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club Armadillos</title>
+    <link rel="stylesheet" href="styleDB.css" />
+    <!-- Font Awesome Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#" class="logo">
+              <img src="Logo.png" alt="Club Armadillos Logo" />
+              <span class="nav-item">Tesorero</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-home"></i>
+              <span class="nav-item">Dashboard</span>
+            </a>
+            <a href="#">
+              <i class="fas fa-calendar-alt"></i>
+              <span class="nav-item">Temporadas</span>
+            </a>
+            <a href="#">
+              <i class="fas fa-money-check"></i>
+              <span class="nav-item">Pagos</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Log out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Fin Navbar -->
+      <section class="main">
+        <!-- Nuevo código -->
+        <div class="main-top">
+          <h1>Club Armadillos</h1>
+        </div>
+        <div class="search-section">
+          <div class="jugadores-section">
+            <i class="fas fa-money-check"></i>
+            <span>Pagos</span>
+          </div>
+          <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Buscar..." />
+          </div>
+        </div>
+        <div class="add-player-container">
+          <button
+            type="button"
+            class="add-player-section card btn-icon icon-button"
+          >
+            <div class="card-content">
+              <i class="fas fa-money-check"></i>
+              <h3>Agregar Pago</h3>
+            </div>
+          </button>
+        </div>
+        <!-- Fin Nuevo código -->
+        <!-- Tabla de informacion #1 -->
+        <section class="attendance">
+          <div class="attendance-list">
+            <h1 class="CardJugadores">Registro de Pagos</h1>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Fecha</th>
+                  <th>Responsable</th>
+                  <th>Jugador</th>
+                  <th>Monto</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>11-03-2024</td>
+                  <td>Alexander Contreras</td>
+                  <td>Alexander Contreras</td>
+                  <td>$250</td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-icon icon-button"
+                      title="Editar"
+                    >
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon icon-button"
+                      title="Eliminar"
+                    >
+                      <i class="fas fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>11-03-2024</td>
+                  <td>Alexander Contreras</td>
+                  <td>Alexander Contreras</td>
+                  <td>$250</td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-icon icon-button"
+                      title="Editar"
+                    >
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon icon-button"
+                      title="Eliminar"
+                    >
+                      <i class="fas fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>11-03-2024</td>
+                  <td>Alexander Contreras</td>
+                  <td>Alexander Contreras</td>
+                  <td>$250</td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-icon icon-button"
+                      title="Editar"
+                    >
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon icon-button"
+                      title="Eliminar"
+                    >
+                      <i class="fas fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>
