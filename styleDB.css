@@ -526,19 +526,17 @@ input[type="email"] {
 /* Estilos Para las tarjetas de eliminar */
 .Card-Eliminar {
   display: flex;
-  top: 60%;
-  left: 50%;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 50vh;
   width: 100vh; 
-  margin-left: 45vh;
-  margin-top: 60px;
+  margin: auto; /* Se elimina margin-left y margin-top y se centra en automatico en el centro haciendolo responsivo **creo que si se aplico en las demas vistas de eliminar, falta revisar** */
 }
 
+
 .red-text {
-  color: rgb(224, 12, 12); /*con esta propiedad, marcamos el color rojo del jugador, usando las etiquetas span*/
+  color: rgb(224, 12, 12); /*marcamos el color rojo del jugador, usando las etiquetas span*/
 }
 
 .Card-Eliminar .form-group {
@@ -554,7 +552,7 @@ input[type="email"] {
   display: flex;
   flex-direction: column;
   font-size: 20px;
-  align-items: center; /* Alinea el contenido verticalmente en el centro */
+  align-items: center; /* contenido vertical en el centro */
   margin-bottom: 20px; 
   font-weight: bold;
 }
@@ -563,6 +561,6 @@ input[type="email"] {
   margin-right: 10px; 
 }
 .Card-Eliminar label:nth-of-type(2) {
-  width:max-content; /* Establece el ancho del segundo label al 75% */
+  width:max-content; /* segundo label al 75% */
 }
 

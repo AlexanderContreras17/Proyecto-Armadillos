@@ -61,61 +61,46 @@
         </ul>
       </nav>
       <!-- Fin Navbar -->
-      <section class="main">
-        <div class="main-top">
-          <h1>Club Armadillos</h1>
-        </div>
-        <div class="search-section">
-          <div class="jugadores-section">
-            <i class="fas fa-list"></i>
-            <span>Agregar Categoria</span>
+      <section class="attendance">
+        <div class="attendance-list">
+          <div class="form-group">
+            <div class="half-width">
+              <label for="nombre">Nombre(s):</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+            <div class="half-width">
+              <label for="costo">Costo:</label>
+              <!-- Nuevo campo "costo" -->
+              <input type="text" id="costo" name="costo" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="half-width">
+              <label for="fecha_inicio">Fecha de Inicio:</label>
+              <input
+                type="date"
+                id="fecha_inicio"
+                name="fecha_inicio"
+                required
+              />
+            </div>
+            <div class="half-width">
+              <label for="fecha_finalizacion">Fecha de Finalización:</label>
+              <input
+                type="date"
+                id="fecha_finalizacion"
+                name="fecha_finalizacion"
+                required
+              />
+            </div>
           </div>
         </div>
-        <!-- Formulario para agregar Categoria -->
-        <section class="attendance">
-          <div class="attendance-list">
-            <div class="form-group">
-              <div class="half-width">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required />
-              </div>
-            </div>
 
-            <div class="form-group">
-              <div class="half-width">
-                <label for="edad_minima">Edad Mínima:</label>
-                <select id="edad_minima" name="edad_minima" required>
-                  <option value="" disabled selected>
-                    Selecciona la edad mínima
-                  </option>
-                  <!-- Aquí puedes añadir las opciones de edad -->
-                  <option value="0">0 años</option>
-                  <option value="1">1 año</option>
-                  <option value="2">2 años</option>
-                  <!-- Continuar con más opciones según sea necesario -->
-                </select>
-              </div>
-              <div class="half-width">
-                <label for="edad_maxima">Edad Máxima:</label>
-                <select id="edad_maxima" name="edad_maxima" required>
-                  <option value="" disabled selected>
-                    Selecciona la edad máxima
-                  </option>
-                  <!-- Aquí puedes añadir las opciones de edad -->
-                  <option value="1">1 año</option>
-                  <option value="2">2 años</option>
-                  <option value="3">3 años</option>
-                  <!-- Continuar con más opciones según sea necesario -->
-                </select>
-              </div>
-            </div>
-          </div>
-          <!-- Botones -->
-          <div class="buttons">
-            <button class="accept-button">Aceptar</button>
-            <button class="cancel-button">Cancelar</button>
-          </div>
-        </section>
+        <!-- Botones -->
+        <div class="buttons">
+          <button class="accept-button">Aceptar</button>
+          <button class="cancel-button">Cancelar</button>
+        </div>
       </section>
     </div>
   </body>

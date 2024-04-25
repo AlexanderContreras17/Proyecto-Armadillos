@@ -19,7 +19,7 @@
           <li>
             <a href="#" class="logo">
               <img src="Logo.png" alt="Club Armadillos Logo" />
-              <span class="nav-item">Admin</span>
+              <span class="nav-item">Tesorero</span>
             </a>
           </li>
           <li>
@@ -27,31 +27,16 @@
               <i class="fas fa-home"></i>
               <span class="nav-item">Dashboard</span>
             </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fas fa-running"></i>
-              <span class="nav-item">Jugadores</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fas fa-user"></i>
-              <span class="nav-item">Responsables</span>
-            </a>
-          </li>
-          <li>
             <a href="#">
               <i class="fas fa-calendar-alt"></i>
               <span class="nav-item">Temporadas</span>
             </a>
-          </li>
-          <li>
             <a href="#">
-              <i class="fas fa-list"></i>
-              <span class="nav-item">Categorias</span>
+              <i class="fas fa-money-check"></i>
+              <span class="nav-item">Pagos</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="logout">
               <i class="fas fa-sign-out-alt"></i>
@@ -67,8 +52,8 @@
         </div>
         <div class="search-section">
           <div class="jugadores-section">
-            <i class="fas fa-calendar-alt"></i>
-            <span>Agregar Temporada</span>
+            <i class="fas fa-money-check"></i>
+            <span>Agregar Pago</span>
           </div>
         </div>
         <!-- Formulario para agregar Temporada -->
@@ -76,25 +61,32 @@
           <div class="attendance-list">
             <div class="form-group">
               <div class="half-width">
-                <label for="nombre">Nombre(s):</label>
-                <input type="text" id="nombre" name="nombre" required />
-              </div>
-              <div class="half-width">
-                <label for="temporada">Categoria:</label>
+                <label for="temporada">Jugador:</label>
                 <select id="temporada" name="temporada" required>
                   <option value="" disabled selected>
-                    Selecciona una Categoria
+                    Selecciona un Jugador
                   </option>
-                  <option value="temporada1">A</option>
-                  <option value="temporada2">B</option>
-                  <option value="temporada3">C</option>
+                  <option value="temporada1">Alexander Contreras</option>
+                  <option value="temporada2">Alexander Contreras</option>
+                  <option value="temporada3">Alexander Contreras</option>
                   <!-- Agrega más opciones si es necesario -->
+                </select>
+              </div>
+              <div class="half-width">
+                <label for="temporada">Responsable:</label>
+                <select id="temporada" name="temporada" required>
+                  <option value="" disabled selected>
+                    Selecciona un Responsable
+                  </option>
+                  <option value="temporada1">Alexander Contreras</option>
+                  <option value="temporada2">Alexander Contreras</option>
+                  <option value="temporada3">Alexander Contreras</option>
                 </select>
               </div>
             </div>
             <div class="form-group">
               <div class="half-width">
-                <label for="fecha_inicio">Fecha de Inicio:</label>
+                <label for="fecha_inicio">Fecha:</label>
                 <input
                   type="date"
                   id="fecha_inicio"
@@ -103,14 +95,20 @@
                 />
               </div>
               <div class="half-width">
-                <label for="fecha_finalizacion">Fecha de Finalización:</label>
-                <input
-                  type="date"
-                  id="fecha_finalizacion"
-                  name="fecha_finalizacion"
-                  required
-                />
+                <label for="nombre">Monto:</label>
+                <input type="text" id="nombre" name="nombre" required />
               </div>
+            </div>
+            <div class="half-width">
+              <label for="temporada">Temporada:</label>
+              <select id="temporada" name="temporada" required>
+                <option value="" disabled selected>
+                  Selecciona una Temporada
+                </option>
+                <option value="temporada1">1</option>
+                <option value="temporada2">2</option>
+                <option value="temporada3">3</option>
+              </select>
             </div>
           </div>
 
