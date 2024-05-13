@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club Armadillos</title>
+    <link rel="stylesheet" href="styleDB.css" />
+    <!-- Font Awesome Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#" class="logo">
+              <img src="Logo.png" alt="Club Armadillos Logo" />
+              <span class="nav-item">Admin</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-home"></i>
+              <span class="nav-item">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-running"></i>
+              <span class="nav-item">Jugadores</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-user"></i>
+              <span class="nav-item">Responsables</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-calendar-alt"></i>
+              <span class="nav-item">Temporadas</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-list"></i>
+              <span class="nav-item">Categorias</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Log out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Fin Navbar -->
+      <section class="main">
+        <!-- Nuevo código -->
+        <div class="main-top">
+          <h1>Club Armadillos</h1>
+        </div>
+        <div class="search-section">
+          <div class="jugadores-section">
+            <i class="fas fa-running"></i>
+            <span>Juan Alexander Contreras Wong</span>
+          </div>
+        </div>
+        <section>
+          <div class="add-player-container">
+            <button
+              type="button"
+              class="add-player-section card btn-icon icon-button"
+            >
+              <div class="card-content">
+                <i class="fas fa-running"></i>
+                <h3>Agregar Jugador</h3>
+              </div>
+            </button>
+          </div>
+        </section>
+        <!-- Fin Nuevo código -->
+        <!-- Tabla de informacion Historial de pagos del jugador -->
+        <section class="attendance">
+          <div class="attendance-list">
+            <div class="payment-cards">
+              <div class="payment-card">
+                <div class="card-content">
+                  <i class="fas fa-dollar-sign"></i>
+                  <span class="card-label">Total de pagos</span>
+                  <span class="payment-amount">$500.00</span>
+                </div>
+              </div>
+              <div class="payment-card">
+                <div class="card-content">
+                  <i class="fas fa-dollar-sign"></i>
+                  <span class="card-label">Total de saldo pendiente</span>
+                  <span class="payment-amount">$200.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta del jugador -->
+            <div class="player-card">
+              <div class="card-content">
+                <h2>Datos del jugador</h2>
+                <div class="player-details">
+                  <div class="detail">
+                    <span class="detail-label">Fecha de nacimiento:</span>
+                    <span class="detail-value">01/01/2000</span>
+                  </div>
+                  <div class="detail">
+                    <span class="detail-label">Responsable:</span>
+                    <span class="detail-value">Juan Pérez</span>
+                  </div>
+                  <div class="detail">
+                    <span class="detail-label">Categoría:</span>
+                    <span class="detail-value">Sub-20</span>
+                  </div>
+                  <div class="detail">
+                    <span class="detail-label">Temporada:</span>
+                    <span class="detail-value">2024</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Cartas de informacion de los pagos-->
+
+            <!-- tabla de informacion-->
+            <h1 class="CardPagos">Historial de pagos</h1>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Fecha</th>
+                  <th>Responsable</th>
+                  <th>Jugador</th>
+                  <th>Monto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>11-03-2024</td>
+                  <td>Carmen Garcia</td>
+                  <td>Carlos Garcia Hernandez</td>
+                  <td>$250.00</td>
+                </tr>
+                <tr class="active">
+                  <td>11-03-2024</td>
+                  <td>Carmen Garcia</td>
+                  <td>Carlos Garcia Hernandez</td>
+                  <td>$250.00</td>
+                </tr>
+                <tr>
+                  <td>11-03-2024</td>
+                  <td>Carmen Garcia</td>
+                  <td>Carlos Garcia Hernandez</td>
+                  <td>$250.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>
