@@ -1,0 +1,134 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logout-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.saldo-container {
+    display: inline-flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px 0;
+    width: auto;
+    text-align: center;
+}
+
+.saldo-pagado,
+.saldo-pendiente {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    flex: 0 1 auto;
+}
+
+.total {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.label {
+    font-size: 1rem;
+    color: #777;
+    margin: 0;
+}
+
+.pago-btn {
+    margin-top: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.movimientos-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.movimientos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.movimientos-header h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.ver-mas-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.movimientos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.movimientos-table th,
+.movimientos-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+.movimientos-table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.movimientos-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.movimientos-table tr:nth-child(odd) {
+    background-color: #fefefe;
+}

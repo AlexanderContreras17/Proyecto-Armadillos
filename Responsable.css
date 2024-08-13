@@ -1,0 +1,278 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logout-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Content Styles */
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.saldo-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.saldo-pagado,
+.saldo-pendiente {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    flex: 0 1 auto;
+    transition: transform 0.3s ease, border-left-width 0.3s ease; /* Transiciones suaves para el tamaño y el borde */
+}
+.costo-total {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    flex: 0 1 auto;
+    border-left: 8px solid #007bff; /* Azul para costo total */
+    transition: transform 0.3s ease, border-left-width 0.3s ease;
+}
+
+.costo-total:hover {
+    border-left-width: 12px;
+    transform: scale(1.05);
+}
+.saldo-pagado {
+    border-left: 8px solid #28a745; /* Verde para saldo pagado */
+}
+
+.saldo-pagado:hover {
+    border-left-width: 12px; /* Aumenta el grosor del borde en hover */
+    transform: scale(1.05); /* Agranda el elemento un 5% */
+}
+
+.saldo-pendiente {
+    border-left: 8px solid #dc3545; /* Rojo para saldo pendiente */
+}
+
+.saldo-pendiente:hover {
+    border-left-width: 12px; /* Aumenta el grosor del borde en hover */
+    transform: scale(1.05); /* Agranda el elemento un 5% */
+}
+
+.abono-cantidad {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    flex: 0 1 auto;
+    text-align: center;
+    transition: transform 0.3s ease, border-left-width 0.3s ease;
+}
+.abono-cantidad{
+    border-left: 8px solid #dc3545;
+}
+
+.abono-cantidad:hover {
+    border-left-width: 12px;
+    transform: scale(1.05);
+}
+
+.total-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+.total {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.label {
+    font-size: 1rem;
+    color: #777;
+    margin: 0;
+}
+
+.pago-btn {
+    margin-top: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Movimientos Card Styles */
+.movimientos-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 100%; /* Asegura que el card se ajuste al ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+}
+
+
+.movimientos-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.movimientos-table th,
+.movimientos-table td {
+    padding: 12px; /* Ajusta el padding para una vista más refinada */
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0; /* Color de borde más suave */
+}
+
+.movimientos-table th {
+    background-color: #f1f1f1; /* Color de fondo más profesional */
+    color: #333;
+}
+
+.movimientos-table tr:nth-child(even) {
+    background-color: #fafafa; /* Color de fondo más claro para filas pares */
+}
+
+.movimientos-table tr:nth-child(odd) {
+    background-color: #ffffff; /* Color de fondo blanco para filas impares */
+}
+
+/* Payment View Styles */
+    /* Payment View Styles */
+    /* .payment-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparente negro para el overlay */
+        /* display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000; /* Asegura que el modal esté encima de otros contenidos */
+    /* }
+
+    .payment-form-wrapper {
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 100%;
+        max-width: 500px;
+        position: relative; /* Para posicionar el botón de cierre dentro del contenedor */
+/*} 
+
+
+    .hidden {
+        display: none;
+    }
+
+    /* Form and Button Styles 
+    .payment-container .form-group {
+        margin-bottom: 15px;
+    }
+
+    .payment-container label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .payment-container input {
+        width:calc(100% - 22px) ;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .payment-container .pago-btn {
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .payment-container .pago-btn:hover {
+        background-color: #0056b3;
+    }
+
+    .payment-container #receipt-section {
+        margin-top: 20px;
+    }
+
+    .payment-container .download-btn {
+        background-color: #28a745;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .payment-container .download-btn:hover {
+        background-color: #218838;
+    }
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        color: #333;
+        transition: color 0.3s ease; /* Añade una transición suave para el color 
+    }
+    
+    .close-btn:hover {
+        color: #ff4d4d; /* Cambia el color del ícono en el hover (puedes ajustar este color según tus necesidades) 
+    }
+     */

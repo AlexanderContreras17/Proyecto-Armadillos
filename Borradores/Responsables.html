@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="responsables.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Mi Cuenta</h1>
+        <button class="logout-btn">Cerrar Sesión</button>
+      </div>
+    </header>
+    <div class="content">
+      <div class="saldo-container">
+        <div class="saldo-pagado">
+          <p class="total">$500.00</p>
+          <p class="label">Saldo Pagado</p>
+        </div>
+        <div class="saldo-pendiente">
+          <p class="total">$500.00</p>
+          <p class="label">Saldo Pendiente</p>
+          <button class="pago-btn">Realizar Pago/Abono</button>
+        </div>
+      </div>
+      <div class="movimientos-card">
+        <div class="movimientos-header">
+          <h2>Últimos Movimientos</h2>
+          <button class="ver-mas-btn">Ver más</button>
+        </div>
+        <table class="movimientos-table">
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Jugador</th>
+              <th>Temporada</th>
+              <th>Monto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>11-03-2024</td>
+              <td>Carlos Garcia Hernandez</td>
+              <td>Nombre de la temporada</td>
+              <td>$250.00</td>
+            </tr>
+            <!-- Repeat similar rows for other transactions -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pago.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="payment-form-wrapper">
+      <button class="close-btn"><i class="fas fa-times"></i></button>
+      <h2>Realizar Pago</h2>
+      <form id="payment-form">
+        <div class="form-group">
+          <label for="card-number">Número de Tarjeta</label>
+          <input type="text" id="card-number" name="card-number" required />
+        </div>
+        <div class="form-group">
+          <label for="expiry-date">Fecha de Expiración</label>
+          <input type="text" id="expiry-date" name="expiry-date" required />
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" name="cvv" required />
+        </div>
+        <button type="submit" class="pago-btn">Pagar</button>
+      </form>
+      <div id="receipt-section" class="hidden">
+        <p>Pago realizado con éxito.</p>
+        <a href="recibo.pdf" download class="download-btn"
+          >Descargar Comprobante</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
