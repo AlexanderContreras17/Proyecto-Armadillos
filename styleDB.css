@@ -232,7 +232,7 @@ a:hover i {
   transition: 0.5s;
 }
 
-/* Estilos de la lista de asistencia */
+/* Estas lineas de estilo hacen que se mire como si fuera una tarjeta */
 .attendance {
   margin-top: 20px;
   text-transform: capitalize;
