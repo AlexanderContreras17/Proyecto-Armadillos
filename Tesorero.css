@@ -1,3 +1,181 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #2c3e50;
+    padding: 20px;
+    width: 250px;
+    min-height: 100vh;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+    margin-left: auto; /* Alinea el ícono a la derecha */
+}
+
+.sidebar ul li a:hover {
+    background-color: #34495e;
+}
+
+.sidebar ul li.active a {
+    background-color: #1abc9c;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.summary {
+    display: flex;
+    flex-wrap: nowrap; /* Evita el wrap para mantener las 4 tarjetas en línea */
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.summary-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    flex: 1 1 25%; /* Cada tarjeta ocupa el 25% del contenedor */
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.summary-item:hover {
+    transform: translateY(-5px);
+}
+
+.summary-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-content p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.summary-content h2 {
+    margin: 10px 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.summary-icon {
+    font-size: 2.5rem;
+    color: #000;
+    margin-left: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: yellow;
+    border-radius: 10px 10px 0 0;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table td a {
+    color: #000000;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+table td a:hover {
+    color: #ffe600;
+}
+
+@media (max-width: 1024px) {
+    .summary {
+        flex-wrap: wrap; /* Permite el wrap en pantallas medianas */
+    }
+    
+    .summary-item {
+        flex: 1 1 calc(50% - 20px); /* 2 tarjetas por línea en pantallas medianas */
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .summary-item {
+        flex: 1 1 100%; /* Tarjetas ocupan todo el ancho en pantallas pequeñas */
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
