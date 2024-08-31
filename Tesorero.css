@@ -141,14 +141,14 @@ table tr:hover {
 }
 
 table td a {
-    color: #3498db;
+    color: #000000;
     margin: 0 5px;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
 table td a:hover {
-    color: #2980b9;
+    color: #ffe600;
 }
 
 @media (max-width: 1024px) {
