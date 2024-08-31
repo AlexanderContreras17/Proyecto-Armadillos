@@ -1,9 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pago de Jugadores</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/kTcXNFp3gPxuJ6sV5e6H6z9Xa74DE/Ni1HZ9/t5u1D63S1tHNUxlHBVVyW36M5Ad2QfiAK4oe/jR4w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Tesorero.css" />
+    <style>
+      /* Estilos generales */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="navbar-pago-jugadores">
+      <ul>
+        <li class="active">
+          <a href="#"> <i class="fas fa-home"></i> Inicio </a>
+        </li>
+        <li>
+          <a href="#"> <i class="fas fa-user"></i> Perfil </a>
+        </li>
+        <li>
+          <a href="#"> <i class="fas fa-cog"></i> Configuración </a>
+        </li>
+        <li>
+          <a href="#"> <i class="fas fa-sign-out-alt"></i> Cerrar sesión </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <div class="form-container-pago-jugadores">
+        <h2>Selecciona un Jugador:</h2>
+        <select>
+          <option>Karina Ramirez Cuellar</option>
+          <!-- Más opciones de jugadores -->
+        </select>
+
+        <h2>Cantidad a Pagar:</h2>
+        <input type="text" placeholder="$0.00" />
+
+        <h2>Saldo Pendiente:</h2>
+        <label>$0.00</label>
+
+        <button>Realizar Pago</button>
+      </div>
+    </div>
+  </body>
 </html>
